@@ -1,2 +1,44 @@
 ###
 GET http://localhost:3000/users
+Content-Type: application/json
+
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "firstname":"leo",
+  "lastname":"pernett jimenez",
+  "username":"lnard214",
+  "password":"123456",
+  "role":"admin"
+}
+
+###
+GET http://localhost:3000/users/8
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/users/4
+Content-Type: application/json
+
+
+
+###
+PUT  http://localhost:3000/users/8
+Content-Type: application/json
+
+{
+  "firstname":"milena"
+}
+
+
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+{
+  "username":"lnard214",
+  "password":"123456"
+}
